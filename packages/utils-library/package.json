@@ -1,0 +1,26 @@
+{
+  "name": "@lookatourdesignsystem/utils-library",
+  "version": "1.1.2",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lookatourdesignsystem/combine.git",
+    "directory": "packages/utils-library"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "resolutions": {
+    "babel-loader": "8.1.0"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "bignumber.js": "^9.1.1"
+  }
+}

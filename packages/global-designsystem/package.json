@@ -1,0 +1,74 @@
+{
+  "name": "@lookatourdesignsystem/global-designsystem",
+  "version": "1.8.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lookatourdesignsystem/combine.git",
+    "directory": "packages/global-designsystem"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@lookatourdesignsystem/icons-library": "^1.1.7",
+    "@lookatourdesignsystem/utils-library": "^1.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "rollup -c",
+    "cy:open": "yarn run cypress open",
+    "test": "yarn cypress run --component",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "build-component": "node build-component.js && yarn prettier --write ./src/stories/components/Icon/Icon.stories.tsx",
+    "postbuild-component": "yarn prettier --write ./src/index.ts"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "resolutions": {
+    "babel-loader": "8.1.0"
+  },
+  "dependencies": {
+    "@lookatourdesignsystem/icons-library": "^1.1.8",
+    "@lookatourdesignsystem/utils-library": "^1.1.2",
+    "@types/overlayscrollbars": "^1.12.2",
+    "bignumber.js": "^9.1.0",
+    "framer-motion": "^6.5.1",
+    "overlayscrollbars": "^2.3.0",
+    "overlayscrollbars-react": "^0.5.2"
+  }
+}
