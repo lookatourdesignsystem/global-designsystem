@@ -5,7 +5,6 @@ import { useEffect, Fragment, useCallback } from "react";
 import { themes } from "@storybook/theming";
 import { useDarkMode } from "storybook-dark-mode";
 import { DocsContainer } from "./DocsContainer";
-import pkg from "../package.json";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -17,12 +16,12 @@ export const parameters = {
   darkMode: {
     dark: {
       ...themes.dark,
-      brandTitle: `Global Design System v${pkg.version}`,
+      brandTitle: `Global Design System`,
       appContentBg: "#000000",
     },
     light: {
       ...themes.light,
-      brandTitle: `Global Design System v${pkg.version}`,
+      brandTitle: `Global Design System`,
     },
   },
   layout: "padded",

@@ -25,6 +25,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "storybook-preset-craco",
     "storybook-dark-mode",
+    "@storybook/addon-google-analytics",
   ],
   webpackFinal: async (config) => {
     // add tailwind
