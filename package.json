@@ -85,8 +85,6 @@
     "icons": "yarn workspace @lookatourdesignsystem/icons-library",
     "utils": "yarn workspace @lookatourdesignsystem/utils-library",
     "sb:gds": "yarn gds storybook",
-    "sb:nds": "yarn nds storybook",
-    "sb:wlds": "yarn wlds storybook",
     "sb-build:gds": "lerna run build --scope=@lookatourdesignsystem/global-designsystem && lerna run build-storybook --scope=@lookatourdesignsystem/global-designsystem",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
